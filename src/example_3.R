@@ -2,9 +2,9 @@ rm(list=ls())
 set.seed(0)
 
 library(MASS)
-source("./src/original_lasso.R")
-source("./src/fused_lasso.R")
-source("./src/elasticnet_lasso.R")
+source("./original_lasso.R")
+source("./fused_lasso.R")
+source("./elasticnet_lasso.R")
 
 compute.R2 = function(p) {
     R2 = matrix(0.5, nrow = p, ncol = p) + diag(0.5, p)
